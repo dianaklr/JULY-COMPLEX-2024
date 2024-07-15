@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+        }
+        .flex{
+            height: 50vh;
+            background-color: grey;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            /*flex-direction: column;*/
+            flex-wrap: wrap-reverse;
+        }
+        .red{
+            background-color: red;
+            order: 1;
+        }
+        .pink{
+            background-color: pink;
+            order: 4;
+        }
+        .green{
+            background-color: green;
+            order: 2;
+        }
+        .blue{
+            background-color: blue;
+            order: 0;
+        }
+        .yellow{
+            background-color: yellow;
+            order: 3;
+        }
+    </style>
+</head>
+<body>
+<div class="flex">
+    <div class="red box"></div>
+    <div class="pink box"></div>
+    <div class="green box"></div>
+    <div class="blue box"></div>
+    <div class="yellow box"></div>
+    <div class="yellow box"></div>
+    <div class="yellow box"></div>
+    <div class="yellow box"></div>
+</div>
+</body>
+</html>
