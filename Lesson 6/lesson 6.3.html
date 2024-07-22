@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        label{
+            display: block;
+            margin-top: 10px;
+        }
+        sup{
+            color: red;
+        }
+        textarea{
+            resize: none;
+        }
+        input[type="email"]::placeholder{
+            width: 200px;
+            color: coral;
+            padding: 20px;
+        }
+        input[type="password"]:focus{
+            outline: none;
+            border: 2px solid hotpink;
+            border-radius: 2px;
+            background-color: rgba(255, 105, 180, 0.42);
+        }
+        input[type="submit"]:hover{
+            background-color: yellow;
+            outline: none;
+            border: 2px solid hotpink;
+            border-radius: 2px;
+        }
+
+        input[type="submit"]:active{
+            background-color: darkseagreen;
+            outline: none;
+            border: 2px solid hotpink;
+            border-radius: 2px;
+        }
+        input[type="checkbox"]{
+            appearance: none;
+            width: 16px;
+            height: 16px;
+            border: 1px solid #d78b8b;
+
+            margin-bottom: -2px;
+            border-radius: 50%;
+        }
+
+        input[type="checkbox"]:checked{
+            background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAACOElEQVR4nJXTXUhTYRgH8EPgRfe149QuXItaGVrrC7ooo8wsIbwQCiuKsrpbpFk6d/ZRkcpWSoEbzYo0Es3NGSZaQXUTqPRhsWm2NW/cIrW2c3Y+ds75x3aVcDboDy8vz8vz/Hh54SWIf7LQlLcGtUQOoRC6cZV67lLBSiJbPg65hSmfU4hTpGrZ8M215RMelxy8VXYjK+B1NMiPrRfxzXFYZiy5LE2RoM15or9lP7rNFzDp6eSzAk8s5+SoWQuuXQfBVYLko50QnCXgOjbgp0WL8ad3YlmBiK1IFtzbIHnLAF85MHQI8uDBdC249VgykrMZhwUqfxdrXydLfaUQvWcgP68Gho+k9+TgaUi9pWDtWjnVpwjQptxmvmMjxIEKnK8vht2wHnhRCYOhCGfrNkHqrwDbrkOqTxGIGVdXsW0aiN7j+OHah0jbFsx2VWO8QZeuRc8xJFo1YCjVUUXAWavPCTdqPoU6axAbqUP4WRPuntiNcN/VdJ06nzNqvqb6MgJTl7WVUasWSz2nIAZ8wO8ZiH4f/nSfxC/7ZkQdxfaMQCq0RX1FcG0F4x9BZHoSwS8fEJ2eABsYhdR/AMJ9/TycWQDGlt/LD9RACr6EvBgA4iHIi35IoVcQ3zYj+WAHEq2FTlDECkUgYVF/FkavKQL8+3tIdm0H21II2kTWK9/ARM7zr22KAPfuNviHe5C4XgDGpFqA0seiKVLgxqwQZ4aXA9/HwL1xgOupAkOR6RWnyL0Z3+J/8heeyJcHiN8PZgAAAABJRU5ErkJggg==");
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="name">введіть своє ім'я  </label>
+        <input type="text" name="username" id="name" placeholder="Anna" required> <sup>*</sup>
+
+        <label for="email">введіть свій email  </label>
+        <input type="email" name="email" id="email" placeholder="example@com" >
+
+        <label for="password">введіть свій пароль  </label>
+        <input type="password" name="password" id="password" placeholder="qwerty123" >
+
+        <label for="age">введіть свій вік  </label>
+        <input type="number" name="age" id="age" min="18" max="99" >
+
+        <label>Стать:</label>
+        <label > <input type="radio" name="gender" value="male"> Чоловіча</label>
+        <label > <input type="radio" name="gender" value="female"> Жіноча</label>
+
+        <label> <input type="checkbox" name="new">Підписка на новини</label>
+        <label> <input type="checkbox" name="new">Підписка на новини</label>
+        <label> <input type="checkbox" name="new">Підписка на новини</label>
+        <label> <input type="checkbox" name="new">Підписка на новини</label>
+
+        <label for="lorem" > Країна </label>
+        <select id="lorem">
+            <option value=" ">Зробіть свій вибір</option>
+            <option value="ua">Україна</option>
+            <option value="usa">США</option>
+            <option value="usa">США</option>
+            <option value="usa">США</option>
+            <option value="usa">США</option>
+            <option value="usa">США</option>
+            <option value="usa">США</option>
+            <option value="usa">США</option>
+        </select>
+
+        <label for="comment">Lorem ipsum dolor.</label>
+        <textarea id="comment" rows="5" cols="50"></textarea>
+    <div>
+        <input type="submit" value="тиць">
+        <input type="reset" value="видалити">
+    </div>
+    </form>
+</body>
+</html>

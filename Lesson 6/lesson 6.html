@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+        tag - 1б
+        .class - 10б
+        id - 100б
+        inline - 1000б
+        */
+
+        div.text>div>p {
+            color: coral;
+        }
+        p.pink+p{
+            color: cornflowerblue;
+        }
+        p.pink~p{
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+<div class="text">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cum doloremque harum? Ab alias animi
+        cupiditate ducimus error est expedita ipsa, iusto natus nostrum omnis optio perspiciatis quaerat sunt voluptates.</p>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab culpa cupiditate, debitis dicta ea esse est, et explicabo, labore minima odio rem suscipit? Deleniti ducimus eligendi placeat quia rem rerum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab culpa cupiditate, debitis dicta ea esse est, et explicabo, labore minima odio rem suscipit? Deleniti ducimus eligendi placeat quia rem rerum.</p>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto at corporis est fugit ipsum, iure magnam nam numquam optio possimus quas quia quo reiciendis sequi similique sint suscipit tenetur unde.</span>
+    </div>
+</div>
+
+<p class="pink">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consectetur consequatur, deserunt
+    distinctio
+    eaque ex illum inventore itaque modi nam officia, omnis porro quasi, quibusdam saepe sit veritatis? Molestias, quaerat?</p>
+<p>Lorem ipsum dolor sit.</p>
+<p>Lorem ipsum dolor sit.</p>
+<p>Lorem ipsum dolor sit.</p>
+<p>Lorem ipsum dolor sit.</p>
+<p>Lorem ipsum dolor sit.</p>
+
+</body>
+</html>
