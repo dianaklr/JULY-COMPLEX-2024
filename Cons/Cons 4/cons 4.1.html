@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .cards{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+        }
+        .card{
+            width: 330px;
+            height: 441px;
+            border-radius: 10px;
+            background: #F8F8F8;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            padding: 34px 22px 26px 22px;
+        }
+        .card p:nth-of-type(1){
+            color: #696871;
+            text-align: center;
+            font-family: "DM Sans", sans-serif;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px; /* 155.556% */
+            letter-spacing: -0.563px;
+        }
+        .card h2{
+            color: #1D293F;
+            text-align: center;
+            font-family: "DM Sans", sans-serif;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 56px; /* 93.333% */
+            letter-spacing: -1.034px;
+            margin: 22px 0 28px 0;
+        }
+        .card{
+            color: #696871;
+            text-align: center;
+            font-family: "Mulish", sans-serif;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 50px; /* 294.118% */
+            letter-spacing: -0.531px;
+        }
+        .card button{
+            width: 285px;
+            height: 60px;
+            border-radius: 10px;
+            border: 1px solid #EAE9F2;
+            background: #FFF;
+            color: #5454D4;
+            text-align: center;
+            font-family: "DM Sans", sans-serif;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -0.531px;
+        }
+        .orange{
+            width: 376px;
+            height: 473px;
+            border-radius: 10px;
+            background: #FF7143;
+            box-shadow: 0px 32px 34px 0px rgba(255, 112, 59, 0.32);
+            color: white;
+            padding: 50px 36px 42px 36px;
+        }
+        .orange h2{
+            color: white;
+        }
+        .orange h2 span{
+        font-size: 26px;
+        }
+        .orange p:nth-of-type(1){
+            color: white;
+        }
+        .orange button{
+            border-radius: 10px;
+            background: #9F3919;
+            width: 305px;
+            height: 60px;
+            color: #FFF;
+            text-align: center;
+            font-family: "DM Sans", sans-serif;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -0.531px;
+            border: none;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <div class="card">
+            <p>Starter</p>
+            <h2>Free</h2>
+            <p>1 Website</p>
+            <p>5 GB Hosting</p>
+            <p>Limited Support</p>
+            <button>Get Started</button>
+        </div>
+
+        <div class="card orange">
+            <p>Starter</p>
+            <h2>$29<span>/month</span></h2>
+            <p>1 Website</p>
+            <p>5 GB Hosting</p>
+            <p>Limited Support</p>
+            <button>Get Started</button>
+        </div>
+
+        <div class="card ">
+            <p>Starter</p>
+            <h2>Free</h2>
+            <p>1 Website</p>
+            <p>5 GB Hosting</p>
+            <p>Limited Support</p>
+            <button>Get Started</button>
+        </div>
+    </div>
+</body>
+</html>

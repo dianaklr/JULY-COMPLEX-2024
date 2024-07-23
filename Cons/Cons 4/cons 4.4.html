@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        div{
+            width: 28vw;
+            height: 60vh;
+            border: 2px solid grey;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+        }
+        div img{
+            width: 50%;
+            margin: 30px 0 10px 0;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        input[type="text"],
+        input[type="password"]
+        {
+            width: 280px;
+            height: 40px;
+            padding: 0 10px;
+            text-overflow: ellipsis;
+            margin-bottom: 10px;
+        }
+        input[type="submit"]{
+            width: 280px;
+            height: 40px;
+            border: none;
+            background-color: cornflowerblue;
+            border-radius: 8px;
+            color: white;
+            font-weight: 600;
+        }
+        div span{
+            color: grey;
+            margin: 15px;
+            display: block;
+        }
+        div p{
+            color: #3f51b5;
+            font-weight: 600;
+            font-size: 20px;
+        }
+        div a{
+            margin: 15px ;
+            text-decoration: none;
+            color: #3f51b5;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <img src="https://1000logos.net/wp-content/uploads/2017/02/Logo-Instagram.png" alt="inst logo">
+        <form>
+        <input type="text" name="username" placeholder="Номер телефону, ім'я користувача або  email">
+        <input type="password" name="password" placeholder="Пароль">
+        <input type="submit" value="Увійти">
+        </form>
+        <span>АБО</span>
+        <p>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0,0,256,256"
+                 style="fill:#000000;">
+                <g transform="translate(-55.04,-55.04) scale(1.43,1.43)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M42,37c0,2.762 -2.238,5 -5,5h-26c-2.761,0 -5,-2.238 -5,-5v-26c0,-2.762 2.239,-5 5,-5h26c2.762,0 5,2.238 5,5z" fill="#3f51b5"></path><path d="M34.368,25h-3.368v13h-5v-13h-3v-4h3v-2.41c0.002,-3.508 1.459,-5.59 5.592,-5.59h3.408v4h-2.287c-1.609,0 -1.713,0.6 -1.713,1.723v2.277h4z" fill="#ffffff"></path></g></g></g>
+            </svg>
+            Увійти через фейсбук
+        </p>
+        <a href="#">Забули пароль?</a>
+    </div>
+
+</body>
+</html>
