@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #cbcaca;
+        }
+        nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: darkseagreen;
+        }
+        nav>ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        nav>ul>li{
+            position: relative;
+        }
+        nav ul a{
+            text-decoration: none;
+            color: black;
+            display: block;
+            padding: 10px 0;
+        }
+        .dropdown{
+            position: absolute;
+            list-style-type: none;
+            background-color: rgba(143, 188, 143, 0.71);
+            width: 100px;
+            display: none;
+        }
+        .dropdown a:hover{
+            background-color: rgba(255, 255, 255, 0.65);
+        }
+
+        nav>ul>li:hover .dropdown{
+            display: block;
+        }
+        li span{
+            font-size: 10px;
+            color: rgba(78, 93, 78, 0.63);
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">lorem</a></li>
+            <li><a href="#">lorem</a></li>
+            <li><a href="#">lorem</a></li>
+            <li><a href="#">lorem <span>&#9660;</span></a>
+                <ul class="dropdown">
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </li>
+            <li><a href="#">lorem</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>

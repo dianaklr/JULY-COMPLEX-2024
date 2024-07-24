@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .flex{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+        .card{
+            width: 200px;
+            height: 250px;
+            border: 2px solid darkslategray;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+        .sale{
+            width: 50px;
+            height: 30px;
+            background-color: #d78b8b;
+            position: absolute;
+            top: -15px;
+            /*border-radius: 10px 10px 0 0;*/
+        }
+.circle-blue{
+    width: 400px;
+    height: 400px;
+    background-color: rgba(100, 149, 237, 0.4);
+    position: absolute;
+    right: -200px;
+    top: -200px;
+    border-radius: 50%;
+}
+.circle-blue-bottom{
+    width: 400px;
+    height: 400px;
+    background-color: rgba(100, 149, 237, 0.4);
+    position: absolute;
+    left: -100px;
+    bottom: -200px;
+    border-radius: 50%;
+}
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="card">
+            <div class="sale"></div>
+            <p>lorem</p>
+            <p>lorem</p>
+            <p>lorem</p>
+        </div>
+
+        <div class="card">
+            <div class="sale"></div>
+            <p>lorem</p>
+            <p>lorem</p>
+            <p>lorem</p>
+        </div>
+
+        <div class="card">
+            <div class="sale"></div>
+            <p>lorem</p>
+            <p>lorem</p>
+            <p>lorem</p>
+        </div>
+    </div>
+
+    <div class="circle-blue"></div>
+    <div class="circle-blue-bottom"></div>
+</body>
+</html>
