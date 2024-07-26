@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header, footer{
+    height: 20vh;
+    background-color: gray;
+    font-size: 32px;
+}
+section{
+    height: 60vh;
+    width: 40vw;
+    background: #AB9D9D;
+    font-size: 1.4em;
+}
+main{
+    height: 60vh;
+    width: 40vw;
+    background: #655151;
+    font-size: 1.2em;
+}
+aside{
+    height: 60vh;
+    width: 20vw;
+    background: #9E8383;
+    font-size: 1.1em;
+}
+div{
+    display: flex;
+}
+article{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+

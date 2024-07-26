@@ -1,0 +1,25 @@
+@media screen and (max-width: 600px){
+    .circle-left, .circle-right{
+        display: none;
+    }
+    .content-404 h2{
+        font-size: 110px;
+    }
+    .content-404 p:first-of-type{
+        font-size: 28px;
+    }
+    .content-404 p:last-of-type{
+        width: 343px;
+        font-size: 18px;
+    }
+    .content-404 button:first-of-type,
+    .content-404 button:last-of-type
+    {
+        width: 343px;
+    }
+    .content-404 div{
+        flex-direction: column;
+        gap: 16px;
+    }
+
+}

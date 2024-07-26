@@ -1,0 +1,21 @@
+@media screen and (max-width: 600px){
+    body{
+        font-size: 12px;
+    }
+    section, main, aside{
+        width: 100vw;
+        height: 10vh;
+    }
+    div{
+        flex-direction: column-reverse;
+    }
+    article{
+        display: block;
+        width: 100vw;
+        height: 30vh;
+        background: #90BCC1;
+    }
+    header, footer{
+        font-size: 28px;
+    }
+}
