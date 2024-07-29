@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        header, aside, main, footer{
+            border: 1px solid;
+            background-color: darkseagreen;
+        }
+        header{
+            grid-area: header;
+            background: #D9D9D9;
+        }
+        .left-aside{
+            grid-area: left-aside;
+            background: #C0BDBD;
+        }
+        .right-aside{
+            grid-area: right-aside;
+            background: #C0BDBD;
+        }
+        main{
+            grid-area: main;
+            background: #A4A4A4;
+        }
+        footer{
+            grid-area: footer;
+            background: #D9D9D9;
+        }
+        .grid{
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 20vw 60vw 20vw;
+            grid-template-rows: 20vh 60vh 20vh;
+            grid-template-areas:
+            'header header header'
+            'left-aside main right-aside'
+            'footer footer footer';
+        }
+        @media screen and (max-width: 600px ) {
+            .grid{
+                grid-template-columns: 1fr 2fr;
+                grid-template-rows: repeat(4, 1fr);
+                grid-template-areas:
+            'header header'
+            'left-aside right-aside'
+            'main main'
+            'footer footer';
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="grid">
+    <header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto dignissimos dolore officia. Delectus dolorum eius harum id minus molestiae quo suscipit vero? Beatae earum fugiat fugit illo molestiae perspiciatis, soluta!</p>
+    </header>
+    <aside class="left-aside"></aside>
+    <main></main>
+    <aside  class="right-aside"></aside>
+    <footer></footer>
+</div>
+</body>
+</html>
